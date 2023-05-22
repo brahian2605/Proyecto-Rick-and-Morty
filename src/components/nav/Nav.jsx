@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom"
-import NavLink from "../Navlink/Navlink";
+import { Link } from 'react-router-dom'
+import NavLink from "../NavLink/NavLink";
 import SearchBar from "../searchbar/SearchBar";
 import style from './Nav.module.css'
 
@@ -11,10 +11,9 @@ class Nav extends React.Component {
 
     render(){
         return <nav className={style.nav}>
-           <Link to={'/home'}> <button>home</button></Link> 
-        <Link to={'/about'}> <span>about</span></Link>
-
-             <SearchBar onSearch={this.props.onSearch} />
+            <Link to={'/home'} ><button>Home</button></Link>
+            <NavLink to={'/about'}><span>About</span></NavLink>
+            <SearchBar onSearch={this.props.onSearch} />
         </nav>
     }
 }

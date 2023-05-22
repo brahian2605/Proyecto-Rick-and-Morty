@@ -1,11 +1,12 @@
-import React from 'react'
+function About() {
+  return <div style={{color:'white'}}>
+    <h1>Acerca de la App de Rick & Morty</h1>
+    <h5>Creada por Brahian</h5>
 
-export const about = () => {
-  return (
-    <div>
-        <h1>acerca de rick an morty</h1>
-        <h5>Creada por Brahian </h5>
-        </div>
-  )
+  </div>;
 }
+
 export default About;
+
+
+

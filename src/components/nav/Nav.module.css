@@ -2,13 +2,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-image: url(../../assets/imagen.png);
-    background-position: center;
-    border: rgb(184, 36, 36);
+    background-color: yellow;
+    border: red;
     /* margin-top: 1em; */
     /* margin-bottom: 1em; */
-    margin: 2em 0em 1em 0em;
+    margin: 1em 0em 1em 0em;
     height: 4em;
     width: 90vw;
-    border-radius: 8em;
+    border-radius: 2em;
  }

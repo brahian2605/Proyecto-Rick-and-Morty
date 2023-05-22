@@ -1,14 +1,14 @@
-import { NavLink as NavlinkComp } from 'react-router-dom'
+import { NavLink as NavLinkComp } from "react-router-dom";
+import style from './NavLink.module.css'
 
-import style from '/.Navlink.module.css'
-
- function Navlink({to, children, ...props}) {
+function NavLink({ to, children, ...props }) {
   return (
-  <NavlinkComp>
-  {...props}
-    to={to}
-    className={({isActive})=>(isActive ? style.isActive : undefined)}
-  </NavlinkComp>
+    <NavLinkComp
+        {...props}
+        to={to}
+        className={({ isActive })=> ( isActive ? style.isActive : undefined)}
+    >{children}</NavLinkComp>
   )
 }
+
 export default NavLink;
